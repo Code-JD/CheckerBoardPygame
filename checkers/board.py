@@ -67,7 +67,7 @@ class Board:
 		
 		return moves
 	
-	def _traverse_left(self, start, stop, step, color, right, skipped=[]):
+	def _traverse_left(self, start, stop, step, color, right, left, skipped=[]):
 		moves = {}
 		last = []
 		for r in range(start, stop, step):
